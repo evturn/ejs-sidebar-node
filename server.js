@@ -4,7 +4,7 @@ var app 		= express();
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
-	res.redner('pages/index');
+	res.render('pages/index');
 });
 
 app.get('/about', function(req, res) {
