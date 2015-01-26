@@ -5,4 +5,8 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
 	res.redner('pages/index');
-})
+});
+
+app.get('/about', function(req, res) {
+	res.render('pages/about');
+});
